@@ -1,0 +1,14 @@
+DRIVE1 /dev/sda
+DRIVE2 /dev/sdb
+
+SWRAID 1
+SWRAIDLEVEL 1
+
+BOOTLOADER grub
+HOSTNAME bootstrap
+
+PART swap swap 16G
+PART /boot ext3 1G
+PART / xfs all
+
+IMAGE /root/.oldroot/nfs/install/../images/Ubuntu-1604-xenial-64-minimal.tar.gz

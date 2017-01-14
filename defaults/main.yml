@@ -1,0 +1,11 @@
+---
+# For the Hetzner webservice, a separate user can be created. You
+# can find this option in the robot webinterface under "Settings".
+
+hetzner_webservice_username: ""
+hetzner_webservice_password: ""
+
+hetzner_authorized_keys: []
+hetzner_root_device: /dev/md2
+hetzner_private_key_file: ""
+hetzner_profile_file: files/autosetup.sample

@@ -1,0 +1,4 @@
+---
+hetzner_webservice_username: "{{ lookup('env', 'HETZNER_WEBSERVICE_USERNAME') }}"
+hetzner_webservice_password: "{{ lookup('env', 'HETZNER_WEBSERVICE_PASSWORD') }}"
+hetzner_private_key_file: /ssh/id_rsa.hetzner
