@@ -22,10 +22,13 @@ Example playbook
   gather_facts: no
 
   vars:
+    hetzner_authorized_keys:
+    - ssh-rsa AAAA...
+    hetzner_autosetup_file: /path/to/autosetup_file
+    hetzner_private_key_file: /path/to/private_key_file
+    hetzner_root_device: /dev/ROOT_DEVICE
     hetzner_webservice_username: USERNAME
     hetzner_webservice_password: PASSWORD
-    hetzner_private_key_file: /path/to/private_key_file
-    hetzner_autosetup_file: /path/to/autosetup_file
 
   roles:
   - role: betacloud.hetzner
