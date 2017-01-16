@@ -3,14 +3,15 @@ set -x
 
 # Available environment variables:
 #
-# NEXUS_ARTIFACT_REPOSITORY
 # NEXUS_ARTIFACT_NAME
+# NEXUS_ARTIFACT_REPOSITORY
 # NEXUS_ARTIFACT_TAG
-# NEXUS_USERNAME
 # NEXUS_PASSWORD
 # NEXUS_SERVER
+# NEXUS_USERNAME
 
-# Set default values
+# Set default values:
+
 ARCHIVE=$NEXUS_ARTIFACT_NAME-$NEXUS_ARTIFACT_TAG.tar.gz
 
 tar cvzf $ARCHIVE README.md defaults files handlers meta tasks
