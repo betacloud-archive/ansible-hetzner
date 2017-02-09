@@ -15,5 +15,5 @@ if [[ -e $OPENRCFILE ]]; then
 fi
 
 if [[ -e tox.ini ]]; then
-    tox -e test
+    tox -e destroy
 fi

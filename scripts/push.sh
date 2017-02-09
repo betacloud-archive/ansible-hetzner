@@ -1,16 +1,26 @@
 #!/usr/bin/env bash
 set -x
 
-# Available environment variables:
+# This file is subject to the terms and conditions defined in file 'LICENSE',
+# which is part of this repository.
+
+# Available environment variables
 #
-# NEXUS_ARTIFACT_NAME
 # NEXUS_ARTIFACT_REPOSITORY
+# NEXUS_ARTIFACT_NAME
 # NEXUS_ARTIFACT_TAG
+# NEXUS_USERNAME
 # NEXUS_PASSWORD
 # NEXUS_SERVER
-# NEXUS_USERNAME
+#
+# NEXUSFILE
 
-# Set default values:
+# Set default values
+
+NEXUSFILE=${NEXUSFILE:-nexus}
+if [[ -e $NEXUSFILE ]]; then
+    source $NEXUSFILE
+fi
 
 ARCHIVE=$NEXUS_ARTIFACT_NAME-$NEXUS_ARTIFACT_TAG.tar.gz
 
