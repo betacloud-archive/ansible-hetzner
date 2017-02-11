@@ -13,7 +13,9 @@ node {
 
     stage('Test') {
       configFileProvider([configFile(fileId: env.OPENRCFILEID, variable: 'OPENRCFILE')]) {
-        sh 'scripts/test.sh'
+        if (env.RUN_TESTS == "true") {
+          sh 'scripts/test.sh'
+        }
       }
     }
 
