@@ -25,7 +25,10 @@ Example playbook
     hetzner_authorized_keys:
     - ssh-rsa AAAA...
     hetzner_autosetup_file: /path/to/autosetup_file
-    hetzner_private_key_file: /path/to/private_key_file
+    hetzner_private_key: |
+      -----BEGIN RSA PRIVATE KEY-----
+      ...
+      -----END RSA PRIVATE KEY-----
     hetzner_root_device: /dev/ROOT_DEVICE
     hetzner_webservice_username: USERNAME
     hetzner_webservice_password: PASSWORD
@@ -56,6 +59,20 @@ PART / xfs all
 
 IMAGE /root/.oldroot/nfs/install/../images/Ubuntu-1604-xenial-64-minimal.tar.gz
 ```
+
+Derzeitig stehen die aktuellen Images zur Verfügung:
+
+* Archlinux-2017-64-minmal.tar.gz
+* CentOS-68-64-minimal.tar.gz
+* CentOS-73-64-minimal.tar.gz
+* CoreOS-1010-64-production.bin.bz2
+* Debian-711-wheezy-64-minimal.tar.gz
+* Debian-87-jessie-64-LAMP.tar.gz
+* Debian-87-jessie-64-minimal.tar.gz
+* openSUSE-422-64-minimal.tar.gz
+* Ubuntu-1404-trusty-64-minimal.tar.gz
+* Ubuntu-1604-xenial-64-minimal.tar.gz
+* Ubuntu-1610-yakkety-64-minimal.tar.gz
 
 License
 -------

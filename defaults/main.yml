@@ -7,5 +7,5 @@ hetzner_webservice_password: ""
 
 hetzner_authorized_keys: []
 hetzner_private_key_file: ""
-hetzner_profile_file: files/autosetup.ubuntu
+hetzner_profile_file: files/autosetup
 hetzner_root_device: /dev/md2
