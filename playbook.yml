@@ -1,9 +1,0 @@
----
-- hosts: all
-  gather_facts: no
-
-  pre_tasks:
-  - include_vars: vars/test.yml
-
-  roles:
-  - role: betacloud.hetzner
