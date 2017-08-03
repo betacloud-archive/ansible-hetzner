@@ -1,13 +1,13 @@
 # Ansible betacloud.hetzner
 
 [![Ansible Galaxy](http://img.shields.io/badge/ansible--galaxy-betacloud.hetzner-blue.svg)](https://galaxy.ansible.com/betacloud/hetzner/)
-
-This is an Ansible role that installs a [Hetzner](https://www.hetzner.de) root server.
+![Ansible 2.2](https://img.shields.io/badge/Ansible-2.2-green.png?style=flat)
+![Ansible 2.3](https://img.shields.io/badge/Ansible-2.3-green.png?style=flat)
 
 Notes
 -----
 
-Caution when using. Systems are installed without further inquiry.
+**Caution when using. Systems are installed without further inquiry.**
 
 Platforms
 ---------
@@ -60,7 +60,7 @@ PART / xfs all
 IMAGE /root/.oldroot/nfs/install/../images/Ubuntu-1604-xenial-64-minimal.tar.gz
 ```
 
-Derzeitig stehen die aktuellen Images zur Verfügung:
+At Hetzner the following images are available:
 
 * Archlinux-2017-64-minmal.tar.gz
 * CentOS-68-64-minimal.tar.gz
@@ -74,6 +74,11 @@ Derzeitig stehen die aktuellen Images zur Verfügung:
 * Ubuntu-1604-xenial-64-minimal.tar.gz
 * Ubuntu-1610-yakkety-64-minimal.tar.gz
 
+Author information
+------------------
+
+This role was created by [Betacloud Solutions GmbH](https://betacloud-solutions.de).
+
 License
 -------
 
@@ -86,8 +91,3 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
-
-Author information
-------------------
-
-This role was created by [Betacloud Solutions GmbH](https://betacloud-solutions.de).
